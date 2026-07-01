@@ -1,0 +1,33 @@
+{
+  "name": "task-manager",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "server": "npm run dev --prefix server",
+    "dev:all": "concurrently -n WEB,API -c blue,magenta \"npm run dev\" \"npm run server\""
+  },
+  "dependencies": {
+    "@tamagui/config": "^2.4.0",
+    "@tamagui/react-native-media-driver": "^2.4.0",
+    "@orpc/client": "^1.14.6",
+    "@orpc/server": "^1.14.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-native-web": "^0.21.2",
+    "tamagui": "^2.4.0"
+  },
+  "devDependencies": {
+    "@tamagui/vite-plugin": "^2.4.0",
+    "@types/node": "^26.0.1",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "concurrently": "^9.1.0",
+    "typescript": "~5.7.0",
+    "vite": "^6.0.0"
+  }
+}
